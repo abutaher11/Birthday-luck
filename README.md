@@ -1,2 +1,2 @@
 # Birthday-luck
- to check whether your is lucky
+ to check if your birthday is lucky
