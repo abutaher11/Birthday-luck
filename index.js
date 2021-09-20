@@ -7,8 +7,11 @@ const outputBox = document.querySelector("#output-box");
 function checkDobIsLucky(){
     const dob = dateOfBirth.value;
     const sum = calculateSum(dob);
-    if (dob && luckyNumber.value){
+    if (dob && Number(luckyNumber.value>0)){
         compareVal(sum, luckyNumber.value)
+    }
+    else if(dob && Number(luckyNumber.value<=0)) {
+        outputBox.innerText = "Lucky Number should be postive. Please enter valid number to continue";
     }
     else {
         outputBox.innerText = "Please enter both fields to continue";
